@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #393e46;
+    color: gainsboro;
+}
+::-webkit-scrollbar {
+    display: none;
+}
