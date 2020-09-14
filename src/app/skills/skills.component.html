@@ -1,0 +1,47 @@
+<div id="skills" class="container d-flex flex-column" style="height: 100vh;;">
+    <div class="col-11 d-flex container" style="width: 100%;align-items: center; justify-content: center;">
+        <!-- content -->
+        <div class="d-flex container" style="align-items: center; justify-content: center;">
+            <div class="name container">
+                Skills
+                <div class="row">
+                    <div class="col">
+                        <h2 class="pt-4 tech-cat"><u>Frontend</u></h2>
+                        <div *ngFor="let tech of frontend">
+                            <h4 class="tech-name">{{tech.name}}</h4>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <u>
+                            <h2>Backend</h2>
+                        </u>
+                        <div *ngFor="let tech of backend">
+                            <h4 class="tech-name">{{tech.name}}</h4>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <u>
+                            <h2 class="pt-4">Other</h2>
+                        </u>
+                        <div *ngFor="let tech of other">
+                            <h4 class="tech-name">{{tech.name}}</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div>
+            <div class="navigation-arrow m-auto" style="width: 100px;">
+                <a href="#projects">
+                    <svg width="5em" height="5em" viewBox="0 0 16 16" class="bi bi-caret-down-fill mb-3" fill="white"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

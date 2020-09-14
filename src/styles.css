@@ -1,11 +1,129 @@
-html{
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap');
+
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     background-color: #393e46;
     color: gainsboro;
 }
+
 ::-webkit-scrollbar {
     display: none;
+}
+
+.name {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 4rem;
+    text-align: center;
+    user-select: none;
+}
+
+.job-title {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+    user-select: none;
+}
+
+.job-title-tech {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.navigation-arrow>a>svg {
+    position: relative;
+    animation-name: levitate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.navigation-arrow {
+    cursor: pointer;
+}
+
+@keyframes levitate {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.25);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Underline animation */
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: #00adb5;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover+.job-title>.hover-underline-animation::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Underline animation end*/
+
+.logo {
+    filter: brightness(80%);
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.logo:hover {
+    filter: brightness(110%);
+}
+
+.tech-title {
+    color: #eeeeee;
+}
+
+.tech {
+    background-color: #00adb5;
+    border-radius: 8px;
+}
+
+.tech-name:hover {
+    color: #ffab2e;
+    transition: 200ms;
+    transform: scale(1.1);
+}
+
+.tech-name:not(:hover) {
+    color: currentColor;
+    transition: 200ms;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+.spacer {
+    width: 100%;
+    height: 5vh;
 }
