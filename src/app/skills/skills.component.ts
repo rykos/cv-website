@@ -25,6 +25,7 @@ export class SkillsComponent implements OnInit {
     { name: "Bootstrap", type: TechnologyType.frontend },
     { name: "HTML", type: TechnologyType.frontend },
     { name: "CSS", type: TechnologyType.frontend },
+    { name: "TypeScript", type: TechnologyType.frontend },
   ]
 
   other: Technology[] = [
