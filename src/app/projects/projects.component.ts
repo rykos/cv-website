@@ -12,7 +12,9 @@ export class ProjectsComponent implements OnInit {
   projects: Project[] = [
     {
       name: 'Restaurant',
-      description: 'description for restaurant appdescription for restaurant appdescription for restaurant appdescription for restaurant appdescription for restaurant appdescription for restaurant appdescription for restaurant appdescription for restaurant appdescription for restaurant appdescription for restaurant appdescription for restaurant appdescription for restaurant appdescription for restaurant appdescription for restaurant appdescription for restaurant appdescription for restaurant appdescription for restaurant app',
+      description: `Website builded with ASP.NET Core and pure Html CSS and Razor as frontend.
+        It uses UserIdentity authorization to authorize restaurant workers to provide panels for managment.
+        Transaction is being verified on server with help of PayPal API.`,
       imgUrls: [
         '/assets/images/Restaurant/scr (1).jpg',
         '/assets/images/Restaurant/scr (2).jpg',
@@ -30,7 +32,9 @@ export class ProjectsComponent implements OnInit {
     },
     {
       name: 'AuctionHouse',
-      description: 'description for auction house app',
+      description: `Backend REST API made with ASP.NET Core, Frontend with Angular.
+      Im authorizing RESTFULL API calls with JasonWebTokens. 
+      App provides ability to buy and sell items from other registered users.`,
       imgUrls: [
         '/assets/images/AuctionHouse/scr (1).jpg',
         '/assets/images/AuctionHouse/scr (2).jpg',
@@ -45,7 +49,10 @@ export class ProjectsComponent implements OnInit {
     },
     {
       name: 'PostWork',
-      description: 'description for post work app',
+      description: `Backend REST API made with ASP.NET Core, Frontend with Angular.
+      Authorization is build with JsonWebToken. Users can post job posters for which other users can apply for.
+      User can filter specific tags such as C#, ASP.NET core or any other.
+      Job poster can manage submissions from account panel.`,
       imgUrls: [
         '/assets/images/PostWork/scr (1).jpg',
         '/assets/images/PostWork/scr (2).jpg',
