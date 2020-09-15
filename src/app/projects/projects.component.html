@@ -7,8 +7,8 @@
                 <h3>Some of my Projects</h3>
                 <div class=" mt-2">
                     <div class="m-auto">
-                        <button *ngFor="let project of projects" class="btn btn-success mx-1"
-                            (click)="changeProject(project.name)">{{project.name}}</button>
+                        <button *ngFor="let project of projects" class="btn mx-1" (click)="changeProject(project.name)"
+                            [class.btn-success]="project.name === activeProject.name" [class.btn-info]="project.name !== activeProject.name">{{project.name}}</button>
                     </div>
                 </div>
                 <!-- Carousel -->
